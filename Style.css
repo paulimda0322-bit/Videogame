@@ -12,7 +12,7 @@
 body{
     font-family:'Roboto', sans-serif;
     line-height:1.6;
-    color:#333;
+    color:#2ECC71;
     background-color:#f4f4f4;
 }
 
@@ -87,7 +87,7 @@ h1,h2,h3{
 #hero p{
     font-size:1.5rem;
     margin-bottom:30px;
-    text-shadow:2px 2px 4px #000;
+    text-shadow:2px 2px 4px #FF6600;
 }
 
 /* Botón */
@@ -122,7 +122,7 @@ h1,h2,h3{
 #personajes h2{
     font-size:3rem;
     margin-bottom:40px;
-    color:#b00;
+    color:#1E90FF;
 }
 
 /* Grid */
@@ -157,7 +157,7 @@ h1,h2,h3{
 .grid-item h3{
     font-size:1.8rem;
     margin:15px 0 5px;
-    color:#333;
+    color:#1E90FF;
 }
 
 .grid-item p{
@@ -186,3 +186,9 @@ margin:auto para centrar todo horizontalmente*/
 
 /* Hero section se uso linear-gradient para que en la imagen de fondo el text se lea mejor
 background-size: cover ayuda a que la imagen cubra gran parte de la pantalla o casi toda*/
+
+/*Se utilizo height: 250px y  object-fit: cover ya que asi todas las tarjetas e imagenes tendrian el mismo tamano, asi sus tamanos originales sean muy distintos*/
+
+/* Para las fuentes y colores se importo Bangers y Roboto desde google fonts. Los colores (#ffcc00 y #0099ff) pertenecen a la paleta de colores de subway surfers*/
+
+/* En cuanto a la transition en los botones y tarjetas, es por como ayuda con e cambio de color y movimiento al pasar el mouse. Sin importar lo suave o brusco que sea. Eto ayudaria a una mejor experiencia de usuario*/
