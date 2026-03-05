@@ -178,4 +178,11 @@ footer{
 
 /* Para este trabajo he utilizado la IA para correccion y para pedirle sugerencias de que podria anadirle para que se viera mas estetico.
 En el HTMl me base principalmente en lo que el profe hizo en clase, unos textos hacerca de HTML y clases de programacion que he tenido en otros cursos antes de la universidad.
-A continuacion justificacion de los puntos clave del CSS    */
+A continuacion justificacion de los puntos clave del CSS   
+*/
+
+/* Clase.container se uso para que el contenido no sea un buque infinito o no se estire infinitamente
+margin:auto para centrar todo horizontalmente*/
+
+/* Hero section se uso linear-gradient para que en la imagen de fondo el text se lea mejor
+background-size: cover ayuda a que la imagen cubra gran parte de la pantalla o casi toda*/
