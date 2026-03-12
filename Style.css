@@ -12,13 +12,17 @@
 body{
     font-family:'Roboto', sans-serif;
     line-height:1.6;
-    color:#2ECC71;
+    color:#ffffff;
     background-color:#000; 
     padding-top: 80px;
 }
 
-/* Container */
+/* Scroll*/
+html{
+    scroll-behavior: smooth;
+}
 
+/* Container */
 .container{
     max-width:1200px;
     margin:auto;
@@ -55,7 +59,7 @@ h1,h2,h3{
     font-size:2rem;
 }
 
-/* Navegación */
+/* Menu */
 
 .main-nav ul{
     list-style:none;
@@ -72,7 +76,7 @@ h1,h2,h3{
     font-weight:bold;
 }
 
-/* HERO */
+/* HERO o inicio */
 
 #inicio{
     background-image: 
@@ -83,15 +87,18 @@ h1,h2,h3{
     background-repeat:no-repeat;
 
     color:#fff;
-    padding: 15px 0;
+    padding: 80px 0;
 }
-.hero-content{
+
+.container-hero{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-
+    flex-wrap: wrap;
 }
+
+/*Hero texto*/
 
 .hero-text{
     flex: 1;
@@ -99,6 +106,16 @@ h1,h2,h3{
     margin-top:20px;
 }
 
+#inicio h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+#inicio p{
+    font-size:1.5rem;
+    margin-bottom:30px;
+    text-shadow:2px 2px 4px #FF6600;
+}
 .hero-video{
     flex: 1;
     display: flex;
@@ -148,30 +165,29 @@ scroll-behavior:smooth;
     transform:scale(1.05);
 }
 
-/* Personajes */
+/*  SECCIONES  */
 
-#personajes{
-    padding:60px 0;
-    text-align:center;
-    background-color:#fff;
+section{
+    padding:80px 0;
+    scroll-margin-top: 120px;
 }
 
-#personajes h2{
+/*titulos secciones*/ 
+section h2{
     font-size:3rem;
     margin-bottom:40px;
-    color:#1E90FF;
+    text-align:center;
+    color:#edff4e;
 }
 
-/* Grid */
-
+/*Grid Tarjetas o cuadros*/ 
 .grid-container{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
 }
 
-/* Tarjetas */
-
+/* Tarjetas*/ 
 .grid-item{
     background:#f9f9f9;
     border-radius:10px;
@@ -179,11 +195,11 @@ scroll-behavior:smooth;
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
     transition:transform 0.3s ease;
 }
-
 .grid-item:hover{
     transform:translateY(-5px);
 }
 
+/*imagen tarjeta o cuadro*/ 
 .grid-item img{
     width:100%;
     height:250px;
@@ -191,21 +207,36 @@ scroll-behavior:smooth;
     display:block;
 }
 
+/*titulo tArjeta*/
 .grid-item h3{
     font-size:1.8rem;
     margin:15px 0 5px;
-    color:#1E90FF;
+    color:#ff9500;
 }
 
+/*texto tarjeta*/
 .grid-item p{
     padding:0 15px 20px;
-    color:#666;
+    color:#565555;
 }
 
-/* Footer */
+/*personajes*/
+#personajes{
+    background: #fff;
+}
 
+/*Trailer*/
+#trailer-iframe{
+    width:100%;
+    height:500px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/*Pie de pagina*/
 footer{
-    background-color:#444;
+    background-color:#222;
     color:#fff;
     text-align:center;
     padding:20px 0;
