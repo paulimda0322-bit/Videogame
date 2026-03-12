@@ -13,7 +13,7 @@ body{
     font-family:'Roboto', sans-serif;
     line-height:1.6;
     color:#2ECC71;
-    background-color:#f4f4f4;
+    background-color:#000; 
 }
 
 /* Container */
@@ -68,14 +68,36 @@ h1,h2,h3{
 
 /* HERO */
 
-#hero{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/fondo.png.png");
-    background-position:center;
-    background-repeat:no-repeat;
+#hero
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
-    color:#fff;
-    text-align:center;
-    padding:150px 0;
+.hero-text{
+    flex: 1;
+    text-align: left;
+}
+
+.hero-video{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-video iframe{ 
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 #hero h1{
